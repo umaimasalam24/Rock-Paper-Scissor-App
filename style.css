@@ -1,0 +1,40 @@
+body{
+margin: 0;
+ font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
+text-align: center;
+display: flex;
+margin-top: 100px;
+}
+.parent{
+    border: 2px solid black;
+    background-image: linear-gradient(to right, rgb(251, 93, 172) , rgb(251, 133, 152) , pink);
+    border-radius: 20px;
+    padding: 60px;
+    margin: auto;
+    align-items: center;
+    animation: fadeIn 1s ease ;
+}
+#score{
+    padding-top: 40px;
+}
+.child button{
+    font-size: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, rgb(251, 93, 172) , rgb(251, 133, 152) , pink);
+    box-shadow: 5px 5px 15px 2px grey;
+    border: 2px solid;  
+}
+#result{
+    margin-top: 40px;
+}
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
